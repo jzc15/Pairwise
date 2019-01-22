@@ -2,6 +2,7 @@
 from datetime import *
 import random,os,copy,time
 import logging
+import math
 import itertools
 #
 # base:
@@ -270,7 +271,7 @@ class utils2 :
         ans0 = []     # 有效测试用例
         
         if seed == None:
-            seed = int(allnum**0.5)
+            seed = int(math.log(allnum, 2))
         # print('seed个数: %d' %(seed))
         # print(self.allpair[(0, 2)]) 
         for i in range(0, seed):
@@ -282,8 +283,8 @@ class utils2 :
 
         cnt = 0
         for para in self.product(allparams, er):           # 依次遍历所有测例
-            print(self.allpair)
-            print(para)
+            # print(self.allpair)
+            # print(para)
             # cnt += 1
             # if cnt % 10000 == 0:
             #     print(cnt, len(ans0))
