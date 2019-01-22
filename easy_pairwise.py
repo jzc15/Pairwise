@@ -10,7 +10,7 @@ import itertools
 #     link:https://www.cnblogs.com/kuzaman/p/7202146.html?utm_source=tuicool&utm_medium=referral
 # extend:
 #     区分合法等价类与非法等价类，并生成不超过1个非法参数的所有组合
-#     不再使用全枚举，基于ATEG，PICT算法的思想，简易实现，选择未覆盖的对增加测试用例
+#     不再使用全枚举，基于AETG，PICT算法的思想，简易实现，选择未覆盖的对增加测试用例
 #     Author: jzc
 #     Time: 2019-01-22     
 
